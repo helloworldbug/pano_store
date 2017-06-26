@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+  <title>地图</title>
+  <meta name="keywords" content="keyword1,keyword2,keyword3">
+  <meta name="description" content="this is my page">
+  <meta name="content-type" content="text/html; charset=utf8">
+  <script type="text/javascript">
+function MM_CheckFlashVersion(reqVerStr,msg){
+  with(navigator){
+    var isIE  = (appVersion.indexOf("MSIE") != -1 && userAgent.indexOf("Opera") == -1);
+    var isWin = (appVersion.toLowerCase().indexOf("win") != -1);
+    if (!isIE || !isWin){  
+      var flashVer = -1;
+      if (plugins && plugins.length > 0){
+        var desc = plugins["Shockwave Flash"] ? plugins["Shockwave Flash"].description : "";
+        desc = plugins["Shockwave Flash 2.0"] ? plugins["Shockwave Flash 2.0"].description : desc;
+        if (desc == "") flashVer = -1;
+        else{
+          var descArr = desc.split(" ");
+          var tempArrMajor = descArr[2].split(".");
+          var verMajor = tempArrMajor[0];
+          var tempArrMinor = (descArr[3] != "") ? descArr[3].split("r") : descArr[4].split("r");
+          var verMinor = (tempArrMinor[1] > 0) ? tempArrMinor[1] : 0;
+          flashVer =  parseFloat(verMajor + "." + verMinor);
+        }
+      }
+      // WebTV has Flash Player 4 or lower -- too low for video
+      else if (userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 4.0;
+
+      var verArr = reqVerStr.split(",");
+      var reqVer = parseFloat(verArr[0] + "." + verArr[2]);
+  
+      if (flashVer < reqVer){
+        if (confirm(msg))
+          window.location = "http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash";
+      }
+    }
+  } 
+}
+  </script>
+  </head>
+    <style>
+		font {
+			font-size:14px;
+			font-weight:800;
+			font-family:微软雅黑;
+			color:#7e7e7e;//字体颜色修改
+		}
+	</style>
+<body onLoad="MM_CheckFlashVersion('7,0,0,0','本页内容需要使用较新的 Macromedia Flash Player 版本。是否现在下载它？');" >
+	<script type="text/javascript">
+var num=6;
+
+
+	   	
+		function show(i){
+			document.getElementById("show"+i).style.display="block";
+			document.getElementById("icon" + i).src = "img/icon" + i + "_big.png";
+			document.getElementById("title" + i).style.display = "none";
+			for (var j = 1; j < 7; j++) {
+			    if (j != i) {
+			        document.getElementById("museum"+j).style.display="none";
+                }
+            }
+
+		}
+		 function hide(i){
+			document.getElementById("show"+i).style.display="none";
+			document.getElementById("icon" + i).src = "img/icon" + i + ".png";
+			document.getElementById("title" + i).style.display = "block";
+
+			for (var j = 1; j < 7; j++) {
+			    if (j != i) {
+			        document.getElementById("museum" + j).style.display = "block";
+			    }
+			}
+		} 
+	</script>
+	 
+<div  style="width:1073px;height:654px;background:url('img/map.jpg');position:absolute;left:0px;top:0px;" >
+  		    <div id="museum1" style="width:107px;height:96px;position:absolute;left:626px;top:112px;" onMouseOut="hide(1)" onMouseMove="show(1)">
+				<img id="icon1" src="img/icon1.png"  />
+				<div style="width:200px;margin-top:-50px;margin-left:80px;"><label id="title1"><font style="font-size:18px;color:#676767;">上海消防博物馆</font></label></div>
+				<div id="show1" style="z-index:999;background:url('img/bg_fire.png');width:297px;height:362px;margin-left:80px;margin-top:-150px;display:none;" >
+			
+				<a href="javascript:;" onClick="window.open('fire.html?floor=1','_blank');" style="position:relative;left:20px;top:320px;color:Red;font-family: "Microsoft YaHei";">360度体验消防博物馆</a>
+				
+				</div>
+			</div> 
+			
+			<div id="museum2" style="width:107px;height:96px;position:absolute;left:555px;top:423px;" onMouseOut="hide(2)" onMouseMove="show(2)">
+				<img id="icon2" src="img/icon2.png"  />
+				<div style="width:200px;margin-top:0px;margin-left:-30px;"><label  id="title2"><font style="font-size:18px;color:#676767;">上海儿童博物馆</font></label></div>
+				<div id="show2" style="z-index:99;background:url('img/bg_children.png');width:319px;height:389px;margin-left:-100px;margin-top:-490px;display:none;" >
+			
+				
+				</div>
+			</div> 
+			
+			<div id="museum3" style="width:107px;height:96px;position:absolute;left:647px;top:313px;" onMouseOut="hide(3)" onMouseMove="show(3)">
+				<img id="icon3" src="img/icon3.png"  />
+				<div style="width:200px;margin-top:0px;margin-left:-50px;"><label  id="title3"><font style="font-size:18px;color:#676767;">上海纺织服饰博物馆</font></label></div>
+				<div id="show3" style="z-index:99;background:url('img/bg_weave.png');width:318px;height:482px;margin-left:80px;margin-top:-400px;display:none;" >
+			
+				<!--a href="javascript:alert(0);"style="position:relative;left:20px;top:450px;color:Red;font-family: "Microsoft YaHei";">360度体验纺织服饰博物馆</a-->
+				
+				</div>
+			</div> 
+			
+			<div id="museum4" style="width:107px;height:96px;position:absolute;left:357px;top:146px;" onMouseOut="hide(4)" onMouseMove="show(4)">
+				<img id="icon4" src="img/icon4.png"  />
+				<div style="width:220px;margin-top:0px;margin-left:-80px;"><label  id="title4"><font style="font-size:18px;color:#676767;">上海水质净化科普教育基地</font></label></div>
+				<div id="show4" style="z-index:99;background:url('img/bg_tianshan.png');width:313px;height:408px;margin-left:-100px;margin-top:0px;display:none;" >
+			
+				<a href="javascript:;" onClick="window.open('sewage.html?floor=1','_blank');" style="position:relative;left:20px;top:360px;color:Red;font-family: "Microsoft YaHei";">360度体验基地</a>
+				<a href="javascript:;" onClick="window.open('video/index.html','_blank');" style="position:relative;left:80px;top:360px;color:Red;font-family: "Microsoft YaHei";">体验污水处理</a>
+				</div>
+			</div> 
+			
+			<div id="museum5" style="width:107px;height:96px;position:absolute;left:559px;top:209px;" onMouseOut="hide(5)" onMouseMove="show(5)">
+				<img id="icon5" src="img/icon5.png"  />
+				<div style="width:200px;margin-top:0px;margin-left:-30px;"><label  id="title5"><font style="font-size:18px;color:#676767;">电能计量展示厅</font></label></div>
+				<div id="show5" style="z-index:99;background:url('img/bg_electric.png');width:320px;height:422px;margin-left:75px;margin-top:-200px;display:none;" >
+			
+				<a href="javascript:;" onClick="window.open('electricity.html?floor=1','_blank');" style="position:relative;left:20px;top:380px;color:Red;font-family: "Microsoft YaHei";">360度体验电能计量展示厅</a>
+				
+				</div>
+			</div> 
+			
+			<div id="museum6" style="width:107px;height:96px;position:absolute;left:171px;top:356px;" onMouseOut="hide(6)" onMouseMove="show(6)">
+				<img id="icon6" src="img/icon6.png"  />
+				<div style="width:200px;margin-top:0px;margin-left:-10px;"><label  id="title6"><font style="font-size:18px;color:#676767;">上海动物园</font></label></div>
+				<div id="show6" style="z-index:99;background:url('img/bg_zoo.png');width:318px;height:381px;margin-left:80px;margin-top:-350px;display:none;" >
+			
+				</div>
+			</div> 
+			
+</div>
+</body>
+</html>

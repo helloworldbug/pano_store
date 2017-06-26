@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>上海水质净化科普教育基地</title>
+<script type="text/javascript">
+function MM_CheckFlashVersion(reqVerStr,msg){
+  with(navigator){
+    var isIE  = (appVersion.indexOf("MSIE") != -1 && userAgent.indexOf("Opera") == -1);
+    var isWin = (appVersion.toLowerCase().indexOf("win") != -1);
+    if (!isIE || !isWin){  
+      var flashVer = -1;
+      if (plugins && plugins.length > 0){
+        var desc = plugins["Shockwave Flash"] ? plugins["Shockwave Flash"].description : "";
+        desc = plugins["Shockwave Flash 2.0"] ? plugins["Shockwave Flash 2.0"].description : desc;
+        if (desc == "") flashVer = -1;
+        else{
+          var descArr = desc.split(" ");
+          var tempArrMajor = descArr[2].split(".");
+          var verMajor = tempArrMajor[0];
+          var tempArrMinor = (descArr[3] != "") ? descArr[3].split("r") : descArr[4].split("r");
+          var verMinor = (tempArrMinor[1] > 0) ? tempArrMinor[1] : 0;
+          flashVer =  parseFloat(verMajor + "." + verMinor);
+        }
+      }
+      // WebTV has Flash Player 4 or lower -- too low for video
+      else if (userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 4.0;
+
+      var verArr = reqVerStr.split(",");
+      var reqVer = parseFloat(verArr[0] + "." + verArr[2]);
+  
+      if (flashVer < reqVer){
+        if (confirm(msg))
+          window.location = "http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash";
+      }
+    }
+  } 
+  
+}
+
+function getInfo() 
+{ 
+var s = ""; 
+s = " 网页可见区域宽："+ document.body.clientWidth; 
+s += " 网页可见区域高："+ document.body.clientHeight; 
+s += " 网页可见区域宽："+ document.body.offsetWidth; //" (包括边线和滚动条的宽)"; 
+s += " 网页可见区域高：" +document.body.offsetHeight; //" (包括边线的宽)"; 
+s += " 网页正文全文宽：" +document.body.scrollWidth; 
+s += " 网页正文全文高：" +document.body.scrollHeight; 
+s += " 网页被卷去的高(ff)：" +document.body.scrollTop; 
+s += " 网页被卷去的高(ie)：" +document.documentElement.scrollTop; 
+s += " 网页被卷去的左：" +document.body.scrollLeft; 
+s += " 网页正文部分上：" +window.screenTop; 
+s += " 网页正文部分左：" +window.screenLeft; 
+s += " 屏幕分辨率的高：" +window.screen.height; 
+s += " 屏幕分辨率的宽：" +window.screen.width; 
+s += " 屏幕可用工作区高度：" +window.screen.availHeight; 
+s += " 屏幕可用工作区宽度：" +window.screen.availWidth;
+s += " 你的屏幕设置是 " +window.screen.colorDepth;// " 位彩色"; 
+s += " 你的屏幕设置 " +window.screen.deviceXDPI;// " 像素/英寸"; 
+alert (s); 
+} 
+
+
+window.onload=function(){
+	  
+	  MM_CheckFlashVersion('8,0,0,0','本页内容需要使用较新的 Macromedia Flash Player 版本。是否现在下载它？');
+	  //autoFill();
+	  
+  }
+  
+  window.onresize=function(){
+  	autoFill();
+  }
+  
+  function autoFill(){
+  	
+  	var winWidth,winHeight;
+	  if (window.innerWidth)
+		winWidth = window.innerWidth;
+	  else if ((document.body) && (document.body.clientWidth))
+		winWidth = document.body.clientWidth;
+	 if(document.body.scrollWidth && document.body.scrollWidth>winWidth)
+		winWidth = document.body.scrollWidth;
+	// 获取窗口高度
+	if (window.innerHeight)
+		winHeight = window.innerHeight;
+	else if ((document.body) && (document.body.clientHeight))
+		winHeight = document.body.clientHeight;
+		
+	if(document.body.scrollHeight && document.body.scrollHeight>winHeight)
+		winHeight = document.body.scrollHeight;
+
+	
+  	  
+	  var obj = document.getElementById("flashView");
+	  var obj1 = document.getElementById("flashView1");
+	  
+	  obj.width = winWidth;
+	  obj.height=winHeight;
+	  obj1.width = winWidth;
+	  obj1.height=winHeight;
+	  
+	  
+  }
+  
+</script>
+</head>
+
+<body style="overflow:hidden;" onload="MM_CheckFlashVersion('8,0,0,0','本页内容需要使用较新的 Macromedia Flash Player 版本。是否现在下载它？');">
+<object id="flashView1" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="100%" height="100%" id="FLVPlayer1">
+  <param name="movie" value="FLVPlayer_Progressive.swf" />
+  <param name="salign" value="lt" />
+  <param name="quality" value="high" />
+  <param name="scale" value="noscale" />
+  <param name="FlashVars" value="&MM_ComponentVersion=1&skinName=Clear_Skin_2&streamName=http://117.135.145.17:8289/upload/3&autoPlay=false&autoRewind=false" />
+  <embed id="flashView" src="FLVPlayer_Progressive.swf" flashvars="&MM_ComponentVersion=1&skinName=Clear_Skin_2&streamName=http://117.135.145.17:8289/upload/3&autoPlay=false&autoRewind=false" quality="high" scale="noscale" width="100%" height="100%" name="FLVPlayer1" salign="LT" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"  allowfullscreen="true" allowscriptaccess="always"/>
+</object>
+
+
+</body>
+
+
+</html>

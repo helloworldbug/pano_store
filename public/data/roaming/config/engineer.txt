@@ -1,0 +1,212 @@
+﻿{
+    "roamingConfig": {
+        "places": [
+            {
+                "placeName": "院士之家外景",
+                "sences": [
+                    {
+                        "senceName": "院士之家外景",
+                        "panos": [
+                            {
+                                "placeid": "522",
+                                "panoid": "20150410gcyhy003"
+                            },
+                            {
+                                "placeid": "522",
+                                "panoid": "20150410gcyhy006"
+                            },
+                            {
+                                "placeid": "522",
+                                "panoid": "20150410gcyhy001"
+                            },
+                            {
+                                "placeid": "522",
+                                "panoid": "20150410gcyhy013"
+                            },
+                            {
+                                "placeid": "522",
+                                "panoid": "20150410gcyhy014"
+                            },
+                            {
+                                "placeid": "522",
+                                "panoid": "20150410gcyhy015"
+                            },
+                            {
+                                "placeid": "522",
+                                "panoid": "20150410gcyhy016"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "placeName": "院士之家一楼",
+                "sences": [
+                    {
+                        "senceName": "院士之家一楼",
+                        "panos": [
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l022"
+                            },
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l023"
+                            },
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l028"
+                            },
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l029"
+                            },
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l030"
+                            },
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l031"
+                            },
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l020"
+                            },
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l021"
+                            },
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l019"
+                            },
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l018"
+                            },
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l027"
+                            },
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l026"
+                            },
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l025"
+                            },
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l034"
+                            },
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l033"
+                            },
+                            {
+                                "placeid": "523",
+                                "panoid": "20150410gcy1l032"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "placeName": "院士之家二楼",
+                "sences": [
+                    {
+                        "senceName": "院士之家二楼",
+                        "panos": [
+                            {
+                                "placeid": "524",
+                                "panoid": "20150410gcy2la013"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "20150410gcy2la014"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "41wpano022"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "41wpano024"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "41wpano023"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "41wpano011"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "41wpano012"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "41wpano013"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "41wpano014"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "20150410gcy2la006"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "20150410gcy2la020"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "20150410gcy2la019"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "20150410gcy2la005"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "20150410gcy2la004"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "20150410gcy2la003"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "20150410gcy2la002"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "20150410gcy2la002"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "20150410gcy2la001"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "20150410gcy2la009"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "20150410gcy2la008"
+                            },
+                            {
+                                "placeid": "524",
+                                "panoid": "20150410gcy2la040"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

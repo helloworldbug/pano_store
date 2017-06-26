@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="getPanoByPlacemap.aspx.cs" Inherits="getPanoByPlacemap" %>

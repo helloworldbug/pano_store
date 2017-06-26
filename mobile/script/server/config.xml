@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <getpanoinfo>/public/getpanoinfo.aspx?panoid={1}&amp;placeid={2}</getpanoinfo>
+    <getpoilist>/public/getpoilist.aspx?panoid={1}&amp;parentid=0</getpoilist>
+    <getfootlist>/public/getfootlist.aspx?panoid={1}</getfootlist>
+    <resourceurl>/upload/</resourceurl>
+    <!--  资源文件路径 path panoid 1024 序号 -->
+    <iphonepanoimg>http://192.168.0.31/panodata/{1}/{2}/{3}/{4}.jpg</iphonepanoimg>
+</root>

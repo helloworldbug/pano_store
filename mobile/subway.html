@@ -1,0 +1,217 @@
+<html>
+<head>
+    <title>上海地铁</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <style>
+        body {
+            margin: 0px;
+            overflow: hidden;
+        }
+    </style>
+
+
+
+
+    
+    <script src="script/scene.js" ></script>
+    
+
+    <script src="../../js/config.js" ></script>
+    <script src="../../js/poi.js" ></script>
+    <script language="javascript">
+        var pano;
+        var lastPlaceid ="";
+       
+        var url = document.location.href;
+        
+        function GetArgsFromHref(sHref, sArgName) {
+            var args = sHref.split("?");
+            var retval = "";
+            if (args[0] == sHref) /*参数为空*/{
+                return retval; /*无需做任何处理*/
+            }
+            var str = args[1];
+            args = str.split("&");
+            for (var i = 0; i < args.length; i++) {
+                str = args[i];
+                var arg = str.split("=");
+                if (arg.length <= 1) continue;
+                if (arg[0] == sArgName)
+                    retval = arg[1];
+            }
+            return retval;
+        }
+
+        function load() {
+            var inPanoid = GetArgsFromHref(url,"panoid")
+            
+            if (inPanoid != null && inPanoid != "") {
+                panoid = inPanoid;
+            }
+
+            var inMapid = GetArgsFromHref(url, "placeid");
+            if (inMapid != null && inMapid != "") {
+                placeid = inMapid;
+            }
+
+            var inFloorId = GetArgsFromHref(url, "floor");
+
+            if (inFloorId != "" && inFloorId != null) {
+                var floorId = parseInt(inFloorId);
+                if (floorId < floorPlaceIds.length && floorId>=0) {
+                    placeid = floorPlaceIds[floorId];
+                    panoid = floorPanoIds[floorId];
+                }
+            }
+
+            
+
+            //alert("panoid:"+panoid+" placeid:"+placeid);
+
+            //document.getElementById("pantxt").value="硬件加速:"+Detector.webgl;
+            pano=new Sun.Spano(document.getElementById("container"),"script/server/config.xml");
+            pano.setSceneImageSize(1024);
+            pano.setMousespeed(80);
+            //监听地图初始化完成
+            pano.addEventListener(Sun.Smap.InitMapCompleteEvent,function abc(str){
+                //alert("地图初始完完毕...");
+            });
+            //监听全景打开完成
+            pano.addEventListener(Sun.SceneEvent.SceneCompleteEvent, function (json) {
+
+                var obj = eval('(' + json + ')');
+                placeid = obj.placeid;
+                panoid = obj.panoid;
+                pano.setFov(90);
+                
+                
+                if (placeid != lastPlaceid) {
+                    lastPlaceid = placeid;
+                    removeMapView();
+                    addMapView();
+                }
+                
+            });
+            //监听自动漫游旋转完一圈
+            pano.addEventListener(Sun.SceneEvent.autoPlayCompleteEvent,function(e){
+                //alert("已旋转完一周");
+            });
+            //监听渲染时方法
+            pano.addEventListener(Sun.SceneEvent.ptzChangeEvent,function(e){
+                //console.warn(e);
+            });
+//            pano.addEventListener(Sun.Smap.clickCradarEvent, function (json) {
+//                alert("click:"+json);
+//            });
+            pano.setMaxMinTiltHand(30,-30);     //设置俯仰角 顶底最大和最小限制
+
+            //enter(0);
+            pano.showPano(placeid, panoid);
+        }
+
+
+
+
+        //修改拖动方向
+        function mouseReverHand(){
+            pano.mouseReverHand();
+        }
+
+        //自动漫游
+        function autoPlayHand(){
+            pano.autoPlayHand(30);
+        }
+
+        //停止漫游
+        function autoStopHand(){
+            pano.autoStopHand();
+        }
+
+        var mapWidth = 0;
+        var serverPath = "/public/";
+        function getplacemapdata(placeid) {
+            var reUrl = serverPath + "getplacemapdata.aspx?placeid=" + placeid;
+            var mapinfos = "";
+            $.ajax({
+                type: "post",
+                async: false, //默认为异步：true
+                dataType: "json",
+                url: reUrl,
+
+                success: function (msg) {
+                    mapinfos += "[";
+                    for (var i = 0; i < msg.length; i++) {
+                        //var str='[{"x":"50","y":"50","panoid":"daolan2q","openicon":"null","closeicon":"null"} //最新的参数格式
+                        mapinfos += '{"x":"' + msg[i].x + '","y":"' + msg[i].y + '","panoid":"' + msg[i].panoid + '"},';
+                    }
+                    mapinfos = mapinfos.substring(0, mapinfos.length - 1);
+                    mapinfos += "]"
+                },
+                error: function (msg) {
+                    alert("出现异常2！");
+                }
+            });
+            return mapinfos;
+        }
+
+        //添加地图
+        function addMapView(){
+
+            var placeMapData = getplacemapdata(placeid);
+            console.log(placeMapData);
+            var json =  eval('(' + placeMapData + ')');
+            
+            var mapObj = new Image();
+            mapObj.src = "map/" + placeid + ".png";
+            mapObj.onload = function () {
+                mapWidth = this.width > window.innerWidth / 2 ? window.innerWidth / 2 : this.width;
+                var mapHeight = this.height > window.innerHeight / 3 ? window.innerHeight / 3 : this.height;
+                var pro = '[{"openIcon":"image/map.png","align":"bottom","marginTop":"0","marginBottom":"0","marginLeft":"0","mapMaxWidth":"' + mapWidth + '","mapMaxHeight":"' + mapHeight + '"}]';
+                pano.addMapView(this, json, pro);
+                var map = document.getElementById("sampid");
+                //map.style.left = (window.innerWidth - this.width) + "px";
+                map.style.top = "0px";
+                map.style.right = "0px";
+                //map.style.zIndex = 99;
+            }
+            
+        }
+
+        //移除地图
+        function removeMapView(){
+            pano.removeMapView();
+        }
+
+        //隐藏地图
+        function hideMapView(e){
+            var map=document.getElementById("sampid");
+            if(map.style.display=="none"){
+                map.style.display="block";
+            }else{
+                map.style.display="none";
+            }
+        }
+
+        //清除缓存
+        function clearCache(){
+            window.localStorage.clear();
+            window.sessionStorage.clear();
+            alert("完成");
+        }
+
+        
+
+        
+       
+
+    </script>
+</head>
+<body onload="load()">
+    <div id="container" style="width:100%; height: 100%;">
+    </div>
+    
+    
+</body>
+</html>

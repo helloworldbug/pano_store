@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="gethalldata.aspx.cs" Inherits="gethalldata" %>

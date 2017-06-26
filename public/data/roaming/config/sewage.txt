@@ -1,0 +1,113 @@
+﻿{
+    "roamingConfig": {
+        "places": [
+            {
+                "placeName": "道路",
+                "sences": [
+                    {
+                        "senceName": "道路",
+                        "panos": [
+                            {
+                                "placeid": "591",
+                                "panoid": "20151229cnws023"
+                            },
+                            {
+                                "placeid": "591",
+                                "panoid": "20151229cnws022"
+                            },
+                            {
+                                "placeid": "591",
+                                "panoid": "20151229cnws021"
+                            },
+                            {
+                                "placeid": "591",
+                                "panoid": "20151229cnws020"
+                            },
+                            {
+                                "placeid": "591",
+                                "panoid": "20151229cnws019"
+                            }
+                            
+                        ]
+                    }
+                ]
+            },
+            {
+                "placeName": "污水处理厂",
+                "sences": [
+                       {
+                        "senceName": "污水处理厂",
+                        "panos": [
+                            {
+                                "placeid": "590",
+                                "panoid": "20151229cnws007"
+                            },                             
+                            {                              
+                                "placeid": "590",          
+                                "panoid": "20151229cnws005"
+                            },                             
+                            {                              
+                                "placeid": "590",          
+                                "panoid": "20151229cnws004"
+                            },                             
+                            {                              
+                                "placeid": "590",          
+                                "panoid": "20151229cnws003"
+                            },                              
+							{                              
+                                "placeid": "590",          
+                                "panoid": "20151229cnws002"
+                            },
+                            {
+                                "placeid": "590",
+                                "panoid": "20151229cnws001"
+                            },
+                            {
+                                "placeid": "590",
+                                "panoid": "20151229cnws008"
+                            },
+                            {
+                                "placeid": "590",
+                                "panoid": "20151229cnws009"
+                            },
+							{
+                                "placeid": "590",
+                                "panoid": "20151229cnws010"
+                            },
+                            {
+                                "placeid": "590",
+                                "panoid": "20151229cnws011"
+                            },
+                            {
+                                "placeid": "590",
+                                "panoid": "20151229cnws012"
+                            },
+                            {
+                                "placeid": "590",
+                                "panoid": "20151229cnws013"
+                            },
+							{
+                                "placeid": "590",
+                                "panoid": "20151229cnws014"
+                            },
+                            {
+                                "placeid": "590",
+                                "panoid": "20151229cnws015"
+                            },
+                            {
+                                "placeid": "590",
+                                "panoid": "20151229cnws016"
+                            },
+                            {
+                                "placeid": "590",
+                                "panoid": "20151229cnws017"
+                            },
+							{
+                                "placeid": "590",
+                                "panoid": "20151229cnws006"
+                            }
+						]
+                    }
+                ]
+    }    ]    }
+}

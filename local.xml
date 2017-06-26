@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>  
+<root isClient="true">
+	<getpanoinfo>pano/topodata/{2}/{1}/getpanoinfo.txt</getpanoinfo>
+	<getfootlist>pano/topodata/{2}/{1}/getfootlist.txt</getfootlist>
+	<getpoilist>pano/topodata/{2}/{1}/getpoilist.txt</getpoilist>
+	<getplacebyid>pano/topodata/{2}/{1}/getplacebyid.txt</getplacebyid>
+	<panoimg>pano/</panoimg>
+	
+	<getplacemapdata>pano/topodata/{2}/{1}/getplacemapdata.txt</getplacemapdata>
+	<!-- <getplacebyid>http://192.168.0.100:8088/admincp/index.php/map/index/getplacebyid.aspx?placeid={1}</getplacebyid> -->
+	 
+	<upload>pano/upload/</upload>
+
+    <loading>assets/swf/loading_as44.swf</loading>
+	<minorload>assets/swf/imgloading.swf</minorload>
+	<mousespeed>80</mousespeed>
+	<panoSett>
+		<tilt max="90" min="-60" />
+	</panoSett>
+	<sett>
+		<e w="8192" h="4096" s="512" />
+	</sett>
+</root>

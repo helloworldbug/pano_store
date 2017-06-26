@@ -1,0 +1,122 @@
+﻿{
+    "roamingConfig": {
+        "places": [
+            {
+                "placeName": "馆外",
+                "sences": [
+                    {
+                        "senceName": "馆外",
+                        "panos": [
+                            {
+                                "placeid": "593",
+                                "panoid": "20160112dlyjsgj014"
+                            },
+                            {
+                                "placeid": "593",
+                                "panoid": "20160112dlyjsgj013"
+                            },
+                            {
+                                "placeid": "593",
+                                "panoid": "20160112dlyjsgj012"
+                            },
+                            {
+                                "placeid": "593",
+                                "panoid": "20160112dlyjsgj012"
+                            },
+                            {
+                                "placeid": "593",
+                                "panoid": "20160112dlyjsgj010"
+                            },
+                            {
+                                "placeid": "593",
+                                "panoid": "20160112dlyjsgj009"
+                            },
+                            {
+                                "placeid": "593",
+                                "panoid": "20160112dlyjsgj008"
+                            },
+                            {
+                                "placeid": "593",
+                                "panoid": "20160112dlyjsgj007"
+                            },
+                            {
+                                "placeid": "593",
+                                "panoid": "20160112dlyjsgj006"
+                            },
+                            {
+                                "placeid": "593",
+                                "panoid": "20160112dlyjsgj005"
+                            },
+                            {
+                                "placeid": "593",
+                                "panoid": "20160112dlyjsgj004"
+                            },
+                            {
+                                "placeid": "593",
+                                "panoid": "20160112dlyjsgj003"
+                            },
+                            {
+                                "placeid": "593",
+                                "panoid": "20160112dlyjsgj001"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "placeName": "馆内",
+                "sences": [
+                    {
+                        "senceName": "馆内",
+                        "panos": [
+                            {
+                                "placeid": "592",
+                                "panoid": "20160112dlyjszt001"
+                            },
+                            {
+                                "placeid": "592",
+                                "panoid": "20160112dlyjszt002"
+                            },
+                            {
+                                "placeid": "592",
+                                "panoid": "20160112dlyjszt003"
+                            },
+                            {
+                                "placeid": "592",
+                                "panoid": "20160112dlyjszt004"
+                            },
+                            {
+                                "placeid": "592",
+                                "panoid": "20160112dlyjszt005"
+                            },
+                            {
+                                "placeid": "592",
+                                "panoid": "20160112dlyjszt006"
+                            },
+                            {
+                                "placeid": "592",
+                                "panoid": "20160112dlyjszt007"
+                            },
+                            {
+                                "placeid": "592",
+                                "panoid": "20160112dlyjszt008"
+                            },
+                            {
+                                "placeid": "592",
+                                "panoid": "20160112dlyjszt009"
+                            },
+                            {
+                                "placeid": "592",
+                                "panoid": "20160112dlyjszt010"
+                            },
+                            {
+                                "placeid": "592",
+                                "panoid": "20160112dlyjszt011"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

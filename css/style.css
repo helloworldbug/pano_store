@@ -1,0 +1,155 @@
+﻿ html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow: hidden;
+            background-color: #ffffff; 
+        }
+
+        object:focus {
+            outline: none;
+        }
+
+        #flashContent {
+            display: none;
+        }
+
+        .abc {
+            position: absolute;
+            left: 664px;
+            top: 60px;
+            width: 150px;
+            height: 100px;
+            z-index: 99999;
+            border: 1px solid red;
+            display: block;
+        }
+
+        .headcss {
+            height: 60px;
+            background-image: url('../headlogo.png');
+            background-repeat: no-repeat;
+            background-color: #000000;
+            z-index: 10;
+        }
+        
+        .footer {
+            position: fixed;
+            _position: absolute;
+            z-index: 2;
+            /*background:#eee;*/
+            bottom: 0;
+            right: 0;
+            _right: 17px;
+            height: 55px;
+            /*background-image:url('map.png') ;*/
+            width: 220px;
+            height: 65px;
+        }
+
+        .imgs {
+            height: 65px;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: #ADADAD;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #0026ff;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: #E3504D;
+        }
+
+        #maps {
+            float: left;
+            height: 100%;
+            width: 25%;
+            background-color: black;
+            display: none;
+            border: 0px;
+            color: white;
+        }
+
+        .Menubox {
+            height: 28px;
+            border-bottom: 1px solid #64B8E4;
+            background: #F8F8F9;
+        }
+
+            .Menubox ul {
+                list-style: none;
+                margin: 7px 40px;
+                padding: 20px;
+                position: absolute;
+            }
+
+                .Menubox ul li {
+                    float: left;
+                    background: #64B8E4;
+                    line-height: 20px;
+                    display: block;
+                    cursor: pointer;
+                    width: 65px;
+                    text-align: center;
+                    color: #fff;
+                    font-weight: bold;
+                    border-top: 1px solid #64B8E4;
+                    border-left: 1px solid #64B8E4;
+                    border-right: 1px solid #64B8E4;
+                }
+
+                    .Menubox ul li.hover {
+                        background: #fff;
+                        border-bottom: 1px solid #fff;
+                        color: #147AB8;
+                    }
+
+        .Contentbox {
+            clear: both;
+           
+            border-top: none;
+            
+           
+            height: 100%;
+            overflow:auto;
+
+        }
+
+            .Contentbox ul {
+                list-style: none;
+                margin: 7px;
+                padding: 0;
+            }
+
+                .Contentbox ul li {
+                    line-height: 24px;
+                    border-bottom: 1px dotted #ccc;
+                }
+
+
+.hallLi 
+{
+    background-color:#000000;
+}
+
+.hallLiSelected 
+{
+    background-color:#E3504D;
+}
+
+.hallSpan 
+{
+    font-family: 微软雅黑;
+    font-size: 13px;
+}

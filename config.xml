@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root isClient="false">
+
+
+
+  <getpanoinfo>/public/getpanoinfo.aspx?panoid={1}&placeid={2}</getpanoinfo>
+  <getfootlist>/public/getfootlist.aspx?panoid={1}</getfootlist>
+  <getpoilist>/public/getpoilist.aspx?panoid={1}&parentid={2}</getpoilist>
+  <!--panoimg>http://210.14.79.181:8090/panodata/</panoimg-->
+  <panoimg>/panodata/</panoimg>
+
+  <getplacemapdata>/public/getplacemapdata.aspx?placeid={1}</getplacemapdata>
+  <getplacebyid>/public/getplacebyid.aspx?placeid={1}</getplacebyid>
+
+
+  <upload>/upload</upload>
+
+  
+  
+
+  <!-- 缩略图的loading -->
+  <loading use ="true">assets/swf/loading3_as3.swf</loading>
+	
+  <!-- 可视分块图的loading -->
+	<minorload use ="false" >assets/swf/imgloading.swf</minorload>
+  
+  <!-- 设置鼠标的速度 -->
+	<mousespeed>100</mousespeed>
+  
+  <!-- 设置上下左右移动的大小 -->
+	<panoSett>
+		<tilt max="90" min="-80" />
+	</panoSett>
+	
+  <!-- 设置下载的分块图 -->
+  <sett>
+    <f  w="4096" h="2048" s="512" /> 
+  <!--<w w="14336" h="7168" s="512" />-->
+    <!--e w="8192" h="4096" s="512" /-->
+	</sett>
+	<!-- 底部缩略图
+  <thumbnail viewurl="assets/plugswf/View.swf" dataurl="http://192.168.0.100:8088/admincp/index.php/map/index/getplacethumbnails.aspx?placeid={1}" roamvisible="true" />
+-->
+  <!-- 场景背景音乐 showBar是否显示跳动符号  enable是否可用  change:是否更新音乐  repeat:是否循环播放  
+	<backsound viewurl="assets/plugswf/SoundView.swf" dataUrl="mm.mp3" showBar="true" enable="true" change="false" repeat="true"  />-->
+ 
+</root>

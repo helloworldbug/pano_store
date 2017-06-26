@@ -1,0 +1,476 @@
+﻿{
+    "roamingConfig": {
+        "places": [
+            {
+                "placeName": "外景",
+                "sences": [
+                    {
+                        "senceName": "外景",
+                        "panos": [
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw016"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw015"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw014"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw013"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw012"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw012"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw010"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw009"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw008"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw007"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw006"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw005"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw004"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw003"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw002"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw001"
+                            },
+                            {
+                                "placeid": "542",
+                                "panoid": "20150727xfsw017"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "placeName": "馆内",
+                "sences": [
+                       {
+                        "senceName": "一楼",
+                        "panos": [
+                            {
+                                "placeid": "539",
+                                "panoid": "20150727xf1l007"
+                            },
+                            {
+                                "placeid": "539",
+                                "panoid": "20150727xf1l004"
+                            },
+                            {
+                                "placeid": "539",
+                                "panoid": "20150727xf1l002"
+                            },
+                            {
+                                "placeid": "539",
+                                "panoid": "20150727xf1l001"
+                            }
+						]},
+						 {"senceName": "二楼",
+                        "panos": [	
+                            {
+                                "placeid": "540",
+                                "panoid": "20150727xf2l025"
+                            },
+                            {
+                                "placeid": "540",
+                                "panoid": "20150727xf2l024"
+                            },
+                            {
+                                "placeid": "540",
+                                "panoid": "20150727xf2l020"
+                            },
+                            {
+                                "placeid": "540",
+                                "panoid": "20150727xf2l002"
+                            },
+                            {
+                                "placeid": "540",
+                                "panoid": "20150727xf2l004"
+                            },
+                            {
+                                "placeid": "540",
+                                "panoid": "20150727xf2l005"
+                            },
+                            {
+                                "placeid": "540",
+                                "panoid": "20150727xf2l006"
+                            },
+                            {
+                                "placeid": "540",
+                                "panoid": "20150727xf2l007"
+                            },
+                            {
+                                "placeid": "540",
+                                "panoid": "20150727xf2l008"
+                            },
+                            {
+                                "placeid": "540",
+                                "panoid": "20150727xf2l009"
+                            },
+                            {
+                                "placeid": "540",
+                                "panoid": "20150727xf2l010"
+                            },
+                            {
+                                "placeid": "540",
+                                "panoid": "20150727xf2l011"
+                            },
+                            {
+                                "placeid": "540",
+                                "panoid": "20150727xf2l021"
+                            },
+                            {
+                                "placeid": "540",
+                                "panoid": "20150727xf2l023"
+                            }
+							]},
+						{"senceName": "三楼",
+                        "panos": [
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l006"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l007"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l008"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l009"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l010"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l011"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l012"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l013"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l014"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l015"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l016"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l017"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l018"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l019"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l020"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l021"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l022"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l023"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l024"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l025"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l026"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l027"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l028"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l029"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l030"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l031"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l032"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l033"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l034"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l035"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l044"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l045"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l046"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l047"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l048"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l049"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l051"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l052"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l053"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l054"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l055"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l056"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l057"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l058"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l059"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l060"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l061"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l092"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l093"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l088"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l089"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l084"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l083"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l082"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l081"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l080"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l079"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l085"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l086"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l087"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l076"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l075"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l074"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l073"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l072"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l071"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l070"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l069"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l068"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l067"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l066"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l065"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l064"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l063"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l062"
+                            },
+                            {
+                                "placeid": "541",
+                                "panoid": "20150727xf3l095"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
